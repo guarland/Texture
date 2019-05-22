@@ -22,6 +22,7 @@ Pod::Spec.new do |spec|
       'Source/Details/**/*.h',
       'Source/Layout/**/*.h',
       'Source/Base/*.h',
+      'Source/Private/*.h',
       'Source/Debug/**/*.h',
       'Source/TextKit/ASTextNodeTypes.h',
       'Source/TextKit/ASTextKitComponents.h'
