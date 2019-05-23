@@ -54,13 +54,13 @@
   CGContextRef context = UIGraphicsGetCurrentContext();
   CGContextSaveGState(context);
   UIBezierPath* bezierPath = [UIBezierPath bezierPath];
-  if (buttonType == ASDefaultPlaybackButtonTypePlay) {
+  if (buttonType == ASBDefaultPlaybackButtonTypePlay) {
     [bezierPath moveToPoint: CGPointMake(0, 0)];
     [bezierPath addLineToPoint: CGPointMake(0, bounds.size.height)];
     [bezierPath addLineToPoint: CGPointMake(bounds.size.width, bounds.size.height/2)];
     [bezierPath addLineToPoint: CGPointMake(0, 0)];
     [bezierPath closePath];
-  } else if (buttonType == ASDefaultPlaybackButtonTypePause) {
+  } else if (buttonType == ASBDefaultPlaybackButtonTypePause) {
     CGFloat pauseSingleLineWidth = bounds.size.width / 3.0;
     [bezierPath moveToPoint: CGPointMake(0, bounds.size.height)];
     [bezierPath addLineToPoint: CGPointMake(pauseSingleLineWidth, bounds.size.height)];
